@@ -1,0 +1,35 @@
+[
+## the flying ants share the exact same frame layout and timing for their core animations.
+	{
+		accel_x: 10,
+		id: "fly",
+		duplicates: 6,
+		rect: [3,96,27,123],
+		frames: 4,
+		reverse: true,
+		duration: 6,
+		events: "18:wingflap",
+	},
+	{
+		accel_x: 10,
+		id: "fly",
+		rect: [3,220,27,247], #blink variant
+		frames: 4,
+		reverse: true,
+		duration: 6,
+		events: "18:wingflap",
+	},
+	{
+		id: "turn",
+		rect: [3,158,27,185],
+		frames: 3,
+		duration: 4,
+	},
+	{
+		accel_y: 20,
+		id: "hurt",
+		rect: [3,189,27,216],
+		frames: 1,
+		duration: 18,
+	}
+]
